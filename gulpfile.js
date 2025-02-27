@@ -1,17 +1,19 @@
+const gulp = require('gulp'); //importando o pacote gulp
+
 function funcaoPadrao(callback) {
-    console.log('Executando via Gulp');
+    console.log('Função Padrão :::: Executando via Gulp');
     callback();
 }
 
 function soma(callback) {
-    console.log('soma: ', 1+1);
+    console.log('Função Soma :::: 1 + 1 =  ', 1+1);
     dizTchau();
     callback();
 }
 
 function dizTchau() {
-    console.log('Tchau Gulp!')
+    console.log('Função Tchau :::: Tchau Gulp!')
 }
 
-exports.default = funcaoPadrao;
-exports.soma1 = soma;
+exports.default = gulp.series(funcaoPadrao, soma);
+// exports.soma = soma;
