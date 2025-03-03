@@ -10,6 +10,14 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "gulp": "^5.0.0"
+    "clone-stats": "^1.0.0",
+    "gulp": "^5.0.0",
+    "gulp-obfuscate": "^0.2.9",
+    "gulp-sass": "^6.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.5.3",
+    "sass": "^1.85.1",
+    "vinyl": "^3.0.0"
   }
 }
